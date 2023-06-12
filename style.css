@@ -1,0 +1,244 @@
+@charsst "utf-8";
+
+/* common */
+
+body {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+	height: auto;
+}
+
+#about {
+	max-width: 960px;
+	margin: 96px auto 96px auto;
+}
+
+#NFT {
+	max-width: 960px;
+	margin: 96px auto 96px auto;
+}
+
+#metaverse {
+	max-width: 960px;
+	margin: 96px auto 96px auto;
+}
+
+/* header */
+
+header div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 20px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 28px;
+	color: white;
+	width: 160px;
+	padding: 2px 0;
+	background: #444;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 24px;
+}
+
+a {
+	text-decoration: none;
+	/* リンクの下線をとります */
+	color: inherit;
+	/* 既存のカラーに戻します */
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+/* メニューにマウスをのせた際に少し透過します。 */
+
+/* main */
+
+#mainvisual img {
+	width: 100%;
+	max-width: 1920px;
+	/* 画像の横幅サイズにあわせて最大幅を指定します */
+	height: 600px;
+	/* 縦の高さを固定します */
+	object-fit: cover;
+	/* 横幅は画面サイズにあわせて伸縮します */
+	height: calc(100vh - 60px);
+	/* 画像の高さをブラウザ下いっぱいまで広げます */
+}
+
+/* about */
+
+#about {
+	/* background-color: pink; */
+	/* margin-top: 96px; */
+	/* margin-bottom: 96px; */
+}
+
+.about1 {
+	text-align: center;
+	/* padding-bottom: 64px; */
+	/* 64pxと48pxで検討中 */
+	padding-bottom: 48px;
+}
+
+.about2 {
+	text-align: center;
+}
+
+.about3 {
+	width: 400px;
+	margin: 0 auto;
+}
+
+h2 {
+	margin: 0;
+	display: inline-block;
+	font-size: 32px;
+	border-bottom: 1px solid;
+}
+
+#about img {
+	border-radius: 50%;
+}
+
+h3 {
+	margin: 0 8px;
+}
+
+p {
+	margin: 8px;
+}
+
+/*  NFT */
+
+#NFT {
+	/* background-color: pink; */
+}
+
+.NFT1 {
+	text-align: center;
+}
+
+/* #NFT li {
+	width: 100%;
+} */
+
+#NFT h3 {
+	font-weight: normal;
+	text-align: center;
+	margin: 8px
+}
+
+#NFT ul {
+	padding: 64px 16px 0;
+	flex-direction: column;
+	/* 画像を縦並びに配置します */
+	/* 主軸は水直。要素の配置方向が上から下（↓）に配置されます。 */
+}
+
+/* metaverse */
+
+#metaverse {
+	/* padding-top: 96px; */
+	margin-top: 80px;
+	text-align: center;
+}
+
+.metaverse2 {
+	/* margin-top: 72px; */
+	padding: 64px 16px 0 16px;
+
+}
+
+/* footer */
+
+footer {
+	margin-top: 128px;
+}
+
+footer p {
+	font-size: 8px;
+	text-align: center;
+	color: #555
+}
+
+/* large screen */
+
+@media screen and (min-width: 600px) {
+
+	/* body {
+		background: pink;
+	} */
+
+	/* header */
+
+	header {
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+
+	/* main */
+
+	#mainvisual img {
+		width: 100% max-width: 1920px;
+		/* 画像の横幅サイズにあわせて最大幅を指定します */
+		height: 800px;
+		/* 縦の高さを固定します */
+		object-fit: cover;
+		/* 横幅は画面サイズにあわせて伸縮します */
+	}
+
+	/* about */
+
+	.about2-3 {
+		/* vertical-align: bottom; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about2 {
+		margin-right: 32px;
+	}
+
+	.about3 {
+		width: 400px;
+		margin: 0;
+	}
+
+	/* NFT */
+
+	#NFT ul {
+		flex-direction: row;
+		/* 主軸は水平。要素の配置方向が左から右（→）に配置されます。 */
+		justify-content: center;
+		/* justify-content: space-between; */
+	}
+
+	#NFT li {
+		padding: 0 16px 0;
+		width: 40%;
+	}
+
+	/* metaverse */
+
+	.metaverse2 {
+		margin: 0 auto;
+		width: 48%;
+	}
+}
